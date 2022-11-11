@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Share your ideas using Facewall">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facewall</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  
+  <header>
+    <nav id="header_wrapper"><a href="./index.html">Facewall</a></nav>
+  </header>
+  <main>
+    <div id="wrapper">
+      <form action="/" method="POST" id="write_post_form">
+        <textarea name="post_content" id="post_content" placeholder="What's on your mind?"></textarea>
+        <button class="action_btn footer_submit_btn">Post</button>
+      </form>
+      <ul id="posts_list"></ul>
+      <div id="clone_content">
+        <ul class="clones_list">
+          <li class="post_item post_item_clone">
+            <button class="remove_post_btn">&times;</button>
+            <p class="post_content"></p>
+            <form action="/" method="POST" class="comment_form">
+              <textarea name="comment_content" class="comment_content" placeholder="Comment on this post"></textarea>
+              <button class="comment_btn footer_submit_btn">Comment</button>
+            </form>
+            <ul class="comments_list"></ul>
+          </li>
+          <li class="comment_item comment_item_clone">
+            <p class="comment_content"></p>
+            <form action="/" method="POST" class="comment_form">
+              <textarea name="comment_content" class="comment_content" placeholder="Reply to this comment"></textarea>
+              <button class="comment_btn footer_submit_btn">Reply</button>
+            </form>
+            <ul class="comments_list"></ul>
+          </li>
+          <li class="comment_item reply_item comment_reply_item_clone">
+            <p class="comment_content"></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <script src="./assets/js/scripts.js"></script>
+</body>
+</html>

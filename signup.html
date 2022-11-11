@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Signup for a Facewall Account.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facewall | Signup</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav id="header_wrapper"><a href="./index.html">Facewall</a></nav>
+  </header>
+  <main id="login_container">
+    <form action="/" method="POST" id="signup_form" class="user_form">
+      <div class="form_header">
+        <h1>Signup</h1>
+        <a href="./index.html">Already have an account?</a>
+      </div>
+      <label for="email_address">
+        <span>Email Address</span>
+        <input type="email" name="email_address" id="email_address" class="email_address" placeholder="@facewall.com">
+      </label>
+      <label for="password">
+        <span>Password</span>
+        <input type="password" name="password" id="password" class="password" placeholder="******">
+      </label>
+      <label for="confirm_password">
+        <span>Confirm Password</span>
+        <input type="password" name="confirm_password" id="confirm_password" class="confirm_password" placeholder="******">
+      </label>
+      <button type="submit" class="action_btn">Signup</button>
+      <div class="error_message"></div>
+    </form>
+  </main>
+  <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
